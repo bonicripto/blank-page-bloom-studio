@@ -14,6 +14,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+// A página da Toptree é publicada no GitHub Pages (pasta docs/); o app da Lovable apenas a exibe em tela cheia.
 function Index() {
   return (
     <main className="h-screen w-screen overflow-hidden" style={{ margin: 0, padding: 0 }}>
