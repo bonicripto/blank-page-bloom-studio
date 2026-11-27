@@ -3,10 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Página em branco" },
-      { name: "description", content: "Uma página em branco, pronta para começar." },
-      { property: "og:title", content: "Página em branco" },
-      { property: "og:description", content: "Uma página em branco, pronta para começar." },
+      { title: "Toptree — Plantas Adultas" },
+      { name: "description", content: "Toptree — Plantas Adultas." },
+      { property: "og:title", content: "Toptree — Plantas Adultas" },
+      { property: "og:description", content: "Toptree — Plantas Adultas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -15,5 +15,14 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  return <main className="min-h-screen bg-background" />;
+  return (
+    <main className="h-screen w-screen overflow-hidden" style={{ margin: 0, padding: 0 }}>
+      <iframe
+        src="https://bonicripto.github.io/blank-page-bloom-studio/"
+        title="Toptree — Plantas Adultas"
+        className="block h-full w-full border-0"
+        style={{ width: "100vw", height: "100vh", border: 0 }}
+      />
+    </main>
+  );
 }
